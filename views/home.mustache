@@ -18,8 +18,8 @@
           	</div>
 	          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 	          	<div class="text mt-md-5">
-		            <h1 class="mb-4">{{{ global.subtitle1 }}}</h1>
-		            <p>{{ global.subtext }}</p>
+		            <h1 class="mb-4">{{{ data.gb.subtitle1 }}}</h1>
+		            <p>{{ data.gb.subtext }}</p>
 		            <p><a class="btn btn-primary px-4 py-3 mt-3" onclick="document.querySelector('.moveDown').scrollIntoView()">Order Now</a></p>
 	            </div>
 	          </div>
@@ -36,8 +36,8 @@
           	</div>
 	          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 	          	<div class="text mt-md-5">
-		            <h1 class="mb-4">{{{global.subtitle2}}}</h1>
-		            <p>{{ global.subtext }}</p>
+		            <h1 class="mb-4">{{{data.gb.subtitle2}}}</h1>
+		            <p>{{ data.gb.subtext }}</p>
 		            <p><a class="btn btn-primary px-4 py-3 mt-3" onclick="document.querySelector('.moveDown').scrollIntoView()">Order Now</a></p>
 	            </div>
 	          </div>
@@ -55,19 +55,19 @@
 	          <div class="heading-section mt-5 mb-4">
 	          	<div class="pl-lg-5 ml-md-5">
 		          	<span class="subheading">About Us</span>
-		            <h2 class="mb-4">Welcome to {{ global.title }}</h2>
+		            <h2 class="mb-4">Welcome to {{ data.gb.title }}</h2>
 	            </div>
 	          </div>
 	          <div class="pl-lg-5 ml-md-5">
-							<p>{{ global.abouttext }}</p>
+							<p>{{ data.gb.abouttext }}</p>
 							<h3 class="mt-5">Special Recipe</h3>
 							<div class="thumb my-4 d-flex">
-                            {{#global.about.images}}
+                            {{#data.gb.about.images}}
                                 <a href="#" class="thumb-menu pr-md-4 text-center">
                                     <div class="img" style="background-image: url({{image}});"></div>
                                     <h4>{{ caption }}</h4>
                                 </a>
-                            {{/global.about.images}}
+                            {{/data.gb.about.images}}
 	            	
 	            </div>
 						</div>
@@ -91,7 +91,7 @@
         			<h3>Coffee</h3>
         		</div>
 
-                {{#coffee}}
+                {{#data.items.coffee}}
                     <div class="menus d-flex ftco-animate">
                 <div class="menu-img img" style="background-image: url({{image}})"></div>
                 <div class="text">
@@ -106,7 +106,7 @@
                     <p><span>{{description}}</span></p>
                 </div>
                     </div>
-                {{/coffee}}
+                {{/data.items.coffee}}
         	</div>
 
             <div class="col-md-6 col-lg-4 menu-wrap">
@@ -114,7 +114,7 @@
         			<h3>Tea</h3>
         		</div>
 
-                {{#tea}}
+                {{#data.items.tea}}
                     <div class="menus d-flex ftco-animate">
                 <div class="menu-img img" style="background-image: url({{image}});"></div>
                 <div class="text">
@@ -129,7 +129,7 @@
                     <p><span>{{description}}</span></p>
                 </div>
                     </div>
-                {{/tea}}
+                {{/data.items.tea}}
         	</div>
 
             <div class="col-md-6 col-lg-4 menu-wrap">
@@ -137,7 +137,7 @@
         			<h3>Pastries</h3>
         		</div>
 
-                {{#pastries}}
+                {{#data.items.pastries}}
                     <div class="menus d-flex ftco-animate">
                 <div class="menu-img img" style="background-image: url({{image}});"></div>
                 <div class="text">
@@ -152,7 +152,7 @@
                     <p><span>{{description}}</span></p>
                 </div>
                     </div>
-                {{/pastries}}
+                {{/data.items.pastries}}
         	</div>
 
         	

@@ -6,14 +6,13 @@
   "scripts": {
     "start": "node ./bin/www",
     "serve": "turbo devserver",
-    "test": "",
     "build": "",
-    "postinstall": "turbo postinstall",
     "reset": "rimraf ./tmp/*"
   },
   "dependencies": {
     "express": "^4.17.1",
     "mustache": "^4.1.0",
+    "turbo": "^1.10.12",
     "turbo360": "^1.8.69",
     "vertex360": "^0.30.39"
   },

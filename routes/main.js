@@ -82,17 +82,17 @@ router.get('/', async (req, res, next) => {
     data.coffee = itemCtr.filter(coffee => coffee.category === "coffee")
     data.tea = itemCtr.filter(lunch => lunch.category === "tea")
     data.pastries = itemCtr.filter(desert => desert.category === "pastries")
-
-    res.render('home', data)
+    res.locals.global = global
+    res.render('home', { data: { items: data, gb: global } })
 })
 
 
 router.get('/blog', async (req, res, next) => {
     const data = req.context
     const glob = global
-    console.log(glob)
+
     data.global = glob
-    res.render('blog', data)
+    res.render('blog', { data: { gb: global } })
 })
 
 
